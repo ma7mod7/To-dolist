@@ -1,0 +1,114 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    outline: none;
+    position: relative;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Playwrite GB S", cursive;
+
+}
+body {
+    height: 100svh;
+    max-height: 100svh;
+    max-width: 100svw;
+    background-image: linear-gradient(160deg,#4a0422,#c63b77);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+
+}
+
+main div .t {
+
+    /* margin: 30px; */
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 340px;
+    box-shadow:  0 0 6px 0 #DE7C7D;
+
+}
+@media(max-width:375px){
+    main div .t{
+        width: 230px;
+    }
+}
+ol{
+    margin: 5px 0px 0px 20px;
+}
+ol li{
+    margin-top:8px;
+}
+.tanimation{
+    display:block;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+.tanimation::after{
+    content: "in|";
+    color: white;
+    animation-duration: 4s;
+    animation-name: tt;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+
+
+}
+.sub{
+    padding: 4px;
+    border-radius: 5px;
+    background-color: #AF1740;
+
+    
+}
+
+@keyframes tt{
+    0%{
+        content: "in|";
+    }
+    30%{
+        content: "input|";
+    }
+    50%{
+        content: "input your|";
+
+    }
+    60%{
+        content: "input your task|";
+
+    }
+    100%{
+        content: "input your task here ...|";
+    }
+  
+}
+.delbtn{
+    color: black;
+    border-radius: 2px;
+    border: none;
+    background-color: #CC2B52;
+    padding: 5px;
+    margin: 0px 3px;
+}
+
+.checkbtn{
+    color: black;
+    border-radius: 2px;
+    border: none;
+    background-color: #DE7C7D;
+    padding: 5px;
+    margin: 2px 1px;
+}
+.check{
+    text-decoration: line-through;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
